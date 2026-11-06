@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    @model List<string>
+<h3 class="mb-3">Farm media</h3>
+<div class="row g-3 gallery">
+  @foreach (var url in Model)
+  {
+    <div class="col-md-3"><div class="card"><img src="@url" /></div></div>
+  }
+</div>
+@if (!Model.Any()) { <p>No images uploaded yet.</p> }
+}

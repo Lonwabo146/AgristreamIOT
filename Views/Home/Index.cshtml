@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="hero mb-4">
+  <h1>Agristream IoT</h1>
+  <p class="lead">Smart monitoring for large-scale farms. Real-time sensor data, drone imagery, and reliable processing during peak loads.</p>
+</div>
+<div class="row g-3">
+  <div class="col-md-4"><div class="card p-3 h-100">
+    <h5>📷 Farm Media</h5><p>Upload drone images to Blob Storage.</p>
+    <a class="btn btn-agri" asp-controller="Farm" asp-action="Upload">Upload</a></div></div>
+  <div class="col-md-4"><div class="card p-3 h-100">
+    <h5>📡 Telemetry</h5><p>Record sensor readings in Table Storage.</p>
+    <a class="btn btn-agri" asp-controller="Farm" asp-action="Telemetry">Add reading</a></div></div>
+  <div class="col-md-4"><div class="card p-3 h-100">
+    <h5>📊 Readings</h5><p>View the latest readings per sensor.</p>
+    <a class="btn btn-agri" asp-controller="Farm" asp-action="Readings">View</a></div></div>
+</div>

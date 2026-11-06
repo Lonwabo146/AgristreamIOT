@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <div class="card p-4 col-md-6 mx-auto">
+        <h3>Upload farm media</h3>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="form-control mb-3" accept="image/*" required />
+            <button class="btn btn-agri">Upload</button>
+        </form>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-success mt-3">@ViewBag.Message</div>
+        }
+    </div>
+}
